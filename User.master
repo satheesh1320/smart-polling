@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align=center>
+    <table>
+    <tr>
+    <td>
+    <img src="Images/Headervote.jpg"/>
+    </td>
+    </tr>
+    </table>
+    <table>
+    <tr>
+    <td>
+        <asp:Menu ID="Menu1" runat="server" BackColor="#33CC33" Font-Bold="True" 
+            ForeColor="White" Height="16px" Orientation="Horizontal" Width="944px">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Userhome.aspx" Text="User Home" Value="Home">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ViewCandidate.aspx" Text="View candidate" 
+                    Value="About">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Feedback.aspx" Text="Feed Back" Value="Feed Back">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Logout" Value="Contact">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    </tr>
+    </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

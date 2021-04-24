@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1 {
+            width: 987px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align=center>
+    <table>
+    <tr>
+    <td>
+    <img src="Images/Headervote.jpg"/>
+    </td>
+    </tr>
+    </table>
+    <table>
+    <tr>
+    <td>
+        <asp:Menu ID="Menu1" runat="server" BackColor="#33CC33" Font-Bold="True" 
+            ForeColor="White" Height="16px" Orientation="Horizontal" Width="944px">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Login.aspx" Text="User Login" Value="User Login">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Adminlogin.aspx" Text="Admin Login" 
+                    Value="Admin Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact" Value="Contact">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    </tr>
+    </table>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+</body>
+</html>
